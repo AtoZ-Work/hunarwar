@@ -216,7 +216,7 @@ a{
 }
 
 .nav__link:hover{
-  color: var(--white-color);
+  color: var(--second-color);
 }
 
 .nav__icon{
