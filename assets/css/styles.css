@@ -8,7 +8,7 @@
 
   /*===== Colors =====*/
   --first-color: #BE0027;
-  --first-color-light: #AFA5D9;
+  --first-color-light: #C4C4C4;
   --white-color: #F7F6FB;
   --black-color: #010B14;
   
@@ -28,10 +28,18 @@
 body{
   position: relative;
   margin: var(--header-height) 0 0 0;
-  padding: 0 1rem;
+  padding: 0;
+  background-color: var(--white-color);
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   transition: .5s;
+}
+
+.main{
+  position: relative;
+  padding-top:  2rem;
+  justify-content: center;
+  color: var(--black-color);
 }
 
 a{
@@ -90,7 +98,7 @@ a{
 .nav__link1{
   position: relative;
   color: var(--white-color);
-  padding:0.55rem;
+  padding: 0.55rem;
   font-weight: 700;
   transition: .3s;
 }
@@ -98,26 +106,48 @@ a{
 .nav__link1:hover{
   position: relative;
   color: var(--black-color);
-  background-color: var(--white-color);
-  padding: 0.5rem 0.75rem;
+  
+  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
+  padding: 0.55rem;
   border-radius: 10px;
-  transition: .3s;
 
 }
 
-/* .active1::before{
-  content: '';
-  position: absolute;
-  justify-content: center;
-  bottom: 0.5rem;
-  width: 64%;
-  height:2px ;
-  background-color: var(--white-color);
-} */
+.content{
+  height: var(--header-height);
+  position: fixed;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  transition: .5s;
+}
 
+.head1{
+  font-weight: 800;
+  font-size: 2rem;
+}
 
-
-
+.head-btn{
+  position: relative;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
+  padding: 0.55rem 0.75rem;
+  margin: 0;
+  font-weight: 700;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.head-btn:hover{
+  
+  color: var(--white-color);
+  background-color: var(--black-color);
+  box-shadow: 0px 0px 20px  rgba(255, 15, 15, 0.4);
+  
+}
 
 /*===== NAV =====*/
 .l-navbar{
@@ -153,9 +183,11 @@ a{
 }
 
 .hunarwar{
+ 
   color: var(--white-color);
   font-weight: 1000;
   font-size: 30px;
+
 }
 
 .hunarwar-w{
@@ -218,7 +250,7 @@ a{
 @media screen and (min-width: 768px){
   body{
     margin: calc(var(--header-height) + 1rem) 0 0 0;
-    padding-left: calc(var(--nav-width) + 2rem);
+    padding-left:0;
   }
 
   .header{
@@ -255,13 +287,32 @@ a{
     
    
   }
-  .header1{
-    padding: 0 6.4rem 0 36rem;
-    justify-content: left;
+  .nav__link1:hover{
+    padding:  0.45rem 0.75rem;
+    /* transform: scale(1.02); */
+  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
    
   }
+  .header1{
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+    justify-content: center;
+   
+  }
+
+  .content{
+    height: var(--header-height);
+    position: fixed;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+    transition: .5s;
+  }
+
+  .head1{
+   
+    font-size: 3rem;
+  }
 }
-
-
-
 
