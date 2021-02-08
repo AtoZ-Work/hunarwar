@@ -8,6 +8,7 @@
 
   /*===== Colors =====*/
   --first-color: #BE0027;
+  --second-color: #fdbd10; 
   --first-color-light: #C4C4C4;
   --white-color: #F7F6FB;
   --black-color: #010B14;
@@ -105,7 +106,7 @@ a{
 
 .nav__link1:hover{
   position: relative;
-  color: var(--black-color);
+  color: var(--second-color);
   
   box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
   padding: 0.55rem;
@@ -133,7 +134,7 @@ a{
 .head-btn{
   position: relative;
   color: var(--white-color);
-  background-color: var(--black-color);
+  background-color: var(--first-color);
   box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
   padding: 0.55rem 0.75rem;
   margin: 0;
@@ -143,9 +144,9 @@ a{
 }
 .head-btn:hover{
   
-  color: var(--white-color);
-  background-color: var(--black-color);
-  box-shadow: 0px 0px 20px  rgba(255, 15, 15, 0.4);
+  color: var(--second-color);
+  background-color: var(--first-color);
+  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
   
 }
 
@@ -209,7 +210,7 @@ a{
 
 .nav__link{
   position: relative;
-  color: var(--first-color-light);
+  color: var(--white-color);
   margin-bottom: 1.5rem;
   transition: .3s;
 }
@@ -234,7 +235,7 @@ a{
 
 /*Active links*/
 .active{
-  color: var(--white-color);
+  color: var(--second-color);
 }
 
 .active::before{
@@ -243,7 +244,7 @@ a{
   left: 0;
   width: 2px;
   height: 32px;
-  background-color: var(--white-color);
+  background-color: var(--second-color);
 }
 
 /* ===== MEDIA QUERIES=====*/
