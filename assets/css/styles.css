@@ -7,7 +7,7 @@
   --nav-width: 68px;
 
   /*===== Colors =====*/
-  --first-color: #FF9900;
+  --first-color: #ff1744;
   --second-color: #424242; 
   --main-color:#393d72;
   --first-color-light: #C4C4C4;
@@ -123,7 +123,7 @@ a{
 .nav__link1:hover{
   position: relative;
   color: var(--first-color);
-  background-color: var(--main-color);
+  background-color: var(--white-color);
   box-shadow: 0px 0px 20px  rgba(255, 255, 255, 0.4);
   padding: 0.55rem;
   border-radius: 10px;
