@@ -32,7 +32,7 @@ body{
   margin: var(--header-height) 0 0 0;
   padding: 0;
   background-color: var(--white-color);
-  font-family: var(--body-font);
+  font-family: "Google Sans Text",Roboto,Arial,sans-serif;
   font-size: var(--normal-font-size);
   transition: .5s;
 }
@@ -41,12 +41,27 @@ body{
   position: relative;
   padding-top:  2rem;
   justify-content: center;
-  color: var(--black-color);
+  color: var(--white-color);
 }
 
 a{
   text-decoration: none;
 }
+
+.container{
+  position: fixed;
+  background-color: var(--white-color);
+  height: 33rem;
+  width: 100%;
+  top: 64;
+  left: 0;
+  align-items: center;
+  justify-content: center;
+  transition: .5s;
+}
+
+
+
 
 /*===== HEADER =====*/
 .header{
@@ -59,13 +74,13 @@ a{
   align-items: center;
   justify-content: space-between;
   padding: 0 1rem;
-  background-color: var(--black-color);
+  background-color: var(--white-color);
   z-index: var(--z-fixed);
   transition: .5s;
 }
 
 .header__toggle{
-  color: var(--white-color);
+  color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -92,7 +107,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--first-color);
+  background-color: var(--main-color);
   z-index: var(--z-fixed);
   transition: .5s;
 }
@@ -107,23 +122,25 @@ a{
 
 .nav__link1:hover{
   position: relative;
-  color: var(--second-color);
-  
-  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
+  color: var(--first-color);
+  background-color: var(--main-color);
+  box-shadow: 0px 0px 20px  rgba(255, 255, 255, 0.4);
   padding: 0.55rem;
   border-radius: 10px;
 
 }
 
 .content{
-  height: var(--header-height);
   position: fixed;
+  top: 0;
   left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 2rem;
+  bottom: 1rem;
+  right: 0;
+  margin: auto;
+  height: 26rem;
+  width: 75%;
+  background-color: var(--first-color-light);
+  
   transition: .5s;
 }
 
@@ -135,8 +152,7 @@ a{
 .head-btn{
   position: relative;
   color: var(--white-color);
-  background-color: var(--first-color);
-  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
+  background-color: #319353;
   padding: 0.55rem 0.75rem;
   margin: 0;
   font-weight: 700;
@@ -145,8 +161,8 @@ a{
 }
 .head-btn:hover{
   
-  color: var(--second-color);
-  background-color: var(--first-color);
+  color: var(--white-color);
+  background-color: #319353;
   box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
   
 }
@@ -158,7 +174,7 @@ a{
   left: -30%;
   width: var(--nav-width);
   height: 100vh;
-  background-color: var(--first-color);
+  background-color: var(--white-color);
   padding: .5rem 1rem 0 0;
   transition: .5s;
   z-index: var(--z-fixed);
@@ -186,38 +202,36 @@ a{
 
 .hunarwar{
  
-  color: var(--white-color);
-  font-weight: 1000;
+  color:   var(--black-color);
+  font-weight: bold;
   font-size: 30px;
-
+  font-family: "Google Sans Text",Roboto,Arial,sans-serif;
 }
 
 .hunarwar-w{
-  color: var(--first-color);
-  
   font-size: 40px;
 }
 
 .nav__logo-icon{
   font-size: 1.25rem;
-  color: var(--white-color);
+  color: var(--second-color);
 }
 
 .nav__logo-name{
-  color: var(--white-color);
+  color: var(--second-color);
   font-weight: 700;
   
 }
 
 .nav__link{
   position: relative;
-  color: var(--white-color);
+  color: var(--second-color);
   margin-bottom: 1.5rem;
   transition: .3s;
 }
 
 .nav__link:hover{
-  color: var(--second-color);
+  color: var(--first-color);
 }
 
 .nav__icon{
@@ -236,7 +250,7 @@ a{
 
 /*Active links*/
 .active{
-  color: var(--second-color);
+  color: var(--first-color);
 }
 
 .active::before{
@@ -245,7 +259,7 @@ a{
   left: 0;
   width: 2px;
   height: 32px;
-  background-color: var(--second-color);
+  background-color: var(--first-color);
 }
 
 /* ===== MEDIA QUERIES=====*/
@@ -292,7 +306,7 @@ a{
   .nav__link1:hover{
     padding:  0.45rem 0.75rem;
     /* transform: scale(1.02); */
-  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4); */
    
   }
   .header1{
@@ -302,19 +316,18 @@ a{
   }
 
   .content{
-    height: var(--header-height);
-    position: fixed;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 6rem;
-    transition: .5s;
+    top: 7rem;
+    left:4rem;
+    bottom: 0;
+    width: 87%; 
   }
 
   .head1{
-   
     font-size: 3rem;
   }
+
+  
+
+
 }
 
