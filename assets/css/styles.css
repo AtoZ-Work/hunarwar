@@ -97,7 +97,7 @@ a{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--main-color);
+  background-color: var(--black-color);
   z-index: var(--z-fixed);
   transition: .5s;
 }
