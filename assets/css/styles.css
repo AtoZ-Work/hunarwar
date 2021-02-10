@@ -7,7 +7,7 @@
   --nav-width: 68px;
 
   /*===== Colors =====*/
-  --first-color:#ff1744;
+  --first-color: #BE0027;
   --second-color: #424242; 
   --main-color:#4e218f;
   --first-color-light: #C4C4C4;
@@ -41,7 +41,7 @@ body{
   position: relative;
   padding-top:  2rem;
   justify-content: center;
-  color: var(--white-color);
+  color: var(--black-color);
 }
 
 a{
@@ -147,24 +147,29 @@ a{
 .head1{
   font-weight: 800;
   font-size: 2rem;
+  color: var(--white-color);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .head-btn{
   position: relative;
   color: var(--white-color);
-  background-color: #319353;
+  background-color: var(--main-color);
   padding: 0.55rem 0.75rem;
-  margin: 0;
+  
+  margin: auto;
   font-weight: 700;
   border-radius: 50px;
   cursor: pointer;
 }
 .head-btn:hover{
-  
-  color: var(--white-color);
-  background-color: #319353;
-  box-shadow: 0px 0px 20px  rgba(0, 0, 0, 0.4);
-  
+  box-shadow: 0px 0px 20px  rgba(255, 255, 255, 0.4);
 }
 
 /*===== NAV =====*/
@@ -202,7 +207,7 @@ a{
 
 .hunarwar{
  
-  color:   var(--black-color);
+  color:   var(--first-color);
   font-weight: bold;
   font-size: 30px;
   font-family: "Google Sans Text",Roboto,Arial,sans-serif;
