@@ -111,13 +111,11 @@ a{
 }
 
 .nav__link1:hover{
-  position: relative;
-  color: var(--first-color);
-  background-color: var(--white-color);
+  color: var(--first-color-light);
   box-shadow: 0px 0px 20px  rgba(255, 255, 255, 0.4);
   padding: 0.55rem;
   border-radius: 10px;
-
+  transition: .3s;
 }
 
 .content{
