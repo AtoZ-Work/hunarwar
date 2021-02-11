@@ -13,9 +13,9 @@
 
         <title>HunarWar</title>
     </head>
-    <body id="body-pd">
+    <body >
         <header class="header" id="header">
-            <div class="header__toggle">
+            <div class="header__toggle" id="body-pd">
                 <i class='bx bx-menu' id="header-toggle"></i>
             </div>
 
@@ -27,7 +27,7 @@
                 <a><img src="assets/img/perfil.jpg" alt=""></a>
             </div>
         </header>
-        <header class="header1" id="header">
+        <div class="header1" id="header">
            
                 <a href="index.html" class="nav__link1 active1">
                     <span class="nav__name1">Home</span>
@@ -48,10 +48,7 @@
                 <a href="underconstruction.html" class="nav__link1">
                     <span class="nav__name1">Trending</span>
                 </a>
-
-                
-       
-        </header>
+            </div>
 
         <div class="l-navbar" id="nav-bar">
             <nav class="nav">
@@ -100,18 +97,39 @@
                 </a>
             </nav>
         </div>
-    <div class="main">
-        <div class="container">
+
+        <!-- main area  -->
+    <main id="main">
+
+        <!-- section A -->
+        <section id="section-a" class="grid">
+           <h1 class="main-heading">Show Your Hunar</h1>
+        </section>
+
+        <!-- section B -->
+        <section id="section-b" class="grid">
             <div class="content">
                 <p class="head1"> The <span style="color:#F7F6FB ; background-color:#BE0027 ; padding:0 0.55rem; ">hottest</span> trends for you to always be in a row.</p>
                 <a href="underconstruction.html" class="head-btn">Get Started</a>
             </div>
-        </div>
-        <!-- <div class="section1">
-            <div class="content"></div>
+        </section>
 
-        </div> -->
-    </div>
+        <!-- section C -->
+        <section id="section-c" class="grid">
+            <!-- <div class="content">
+                <p class="head1"> The <span style="color:#F7F6FB ; background-color:#BE0027 ; padding:0 0.55rem; ">hottest</span> trends for you to always be in a row.</p>
+                <a href="underconstruction.html" class="head-btn">Get Started</a>
+            </div> -->
+        </section>
+
+        <!-- Section D -->
+        <section id="section-d" class="grid">
+            <div class="content">
+                <!-- <p class="head1"> The <span style="color:#F7F6FB ; background-color:#BE0027 ; padding:0 0.55rem; ">hottest</span> trends for you to always be in a row.</p>
+                <a href="underconstruction.html" class="head-btn">Get Started</a> -->
+            </div>
+        </section>
+    </main>
         <!-- <h1>Components</h1> -->
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
